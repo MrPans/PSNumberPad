@@ -12,6 +12,7 @@
 
 @interface PSNumberPad : UIView
 
+//唯一指定初始化方法，不使用此方法初始化无法使键盘生效。
 + (PSNumberPad *)pad;
 
 /**
