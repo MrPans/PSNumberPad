@@ -1,5 +1,6 @@
 # PSNumberPad (中文在后)
 A number keyboard for input price.
+
 Apple have many keyboard but no one compeletly suitable the scene,which is price input.
 PSNumberPad fill this blank.
 
@@ -22,7 +23,7 @@ Download zip and unarchiver.Drag 'PSNumberPad' folder into your project.
 **Make a lazy initlazer.**
 
  
- ```objective-c @property (nonatomic, strong) PSNumberPad *numberPad;
+```objective-c @property (nonatomic, strong) PSNumberPad *numberPad;
 
 - (PSNumberPad *)numberPad
 {
@@ -32,7 +33,7 @@ Download zip and unarchiver.Drag 'PSNumberPad' folder into your project.
     }
     return _numberPad;
 }
- ```
+```
  
 **Tell PSNumberPad with is current inputing textField**
 
@@ -51,7 +52,8 @@ For more，download and see the demo。
 
 # PSNumberPad
 一个仅能输入数字和小数点的键盘。常用于需要输入价格的场景。
-苹果的键盘类型已经可以满足大多数开发需求了。但遇上O2O类App的开发 仍然有硬伤，那就是没有一个好用的，仅能输入数字和小数点的键盘。如果用其他键盘，会增加许多处理字符的工作量，最主要的是用户体验非常差。PSNumberPad弥补了这一空白。
+
+苹果的键盘类型已经可以满足大多数开发需求了。但遇上O2O类App的开发 仍然有硬伤，那就是没有一个好用的，仅能输入数字和小数点的键盘。如果用其他键盘，会增加许多处理字符的工作量，最主要的是用户体验比较差。PSNumberPad弥补了这一空白。
 
 ### 预览 
 ![image](https://raw.githubusercontent.com/DeveloperPans/PSNumberPad/master/PSNumberPad.gif)
@@ -72,7 +74,7 @@ pod 'PSNumberPad'
 ### 使用方法
 **推荐使用懒加载初始化**
  
- ```objective-c @property (nonatomic, strong) PSNumberPad *numberPad;
+```objective-c @property (nonatomic, strong) PSNumberPad *numberPad;
 
 - (PSNumberPad *)numberPad
 {
@@ -82,7 +84,7 @@ pod 'PSNumberPad'
     }
     return _numberPad;
 }
- ```
+```
  
 **给numberPad的textField赋值**
 
