@@ -22,8 +22,10 @@ Download zip and unarchiver.Drag 'PSNumberPad' folder into your project.
 ### Usage
 **Make a lazy initlazer.**
 
- 
-```objective-c @property (nonatomic, strong) PSNumberPad *numberPad;
+
+```objective-c 
+
+@property (nonatomic, strong) PSNumberPad *numberPad;
 
 - (PSNumberPad *)numberPad
 {
@@ -33,6 +35,7 @@ Download zip and unarchiver.Drag 'PSNumberPad' folder into your project.
     }
     return _numberPad;
 }
+
 ```
  
 **Tell PSNumberPad with is current inputing textField**
@@ -74,7 +77,9 @@ pod 'PSNumberPad'
 ### 使用方法
 **推荐使用懒加载初始化**
  
-```objective-c @property (nonatomic, strong) PSNumberPad *numberPad;
+```objective-c 
+
+@property (nonatomic, strong) PSNumberPad *numberPad;
 
 - (PSNumberPad *)numberPad
 {
@@ -84,6 +89,7 @@ pod 'PSNumberPad'
     }
     return _numberPad;
 }
+
 ```
  
 **给numberPad的textField赋值**
