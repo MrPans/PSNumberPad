@@ -8,9 +8,16 @@
 
 #import "PSNumberPad.h"
 
+#if __LP64__ || (TARGET_OS_EMBEDDED && !TARGET_OS_IPHONE) || TARGET_OS_WIN32 || NS_BUILD_32_LIKE_64
+#define IntegerFormatter @"%ld"
+#else
+#define IntegerFormatter @"%d"
+#endif
 
 static const NSInteger MaxNumber = 10000000;
-static  NSString *const Dot = @".";
+static NSString *const Dot = @".";
+static NSString *const Zero = @"0";
+static NSString *const ZeroDot = @"0.";
 
 @interface PSNumberPad ()
 
@@ -49,28 +56,29 @@ static  NSString *const Dot = @".";
 - (IBAction)touchNumberButton:(UIButton *)sender
 {
     NSInteger inputNumber = [sender.titleLabel.text integerValue];
-    NSRange dotRange = [_textField.text rangeOfString:Dot];
-    CGFloat numberAfterInput = [[NSString stringWithFormat:@"%@%ld", self.textField.text, inputNumber] doubleValue];
+    NSRange dotRange = [self.textField.text rangeOfString:Dot];
+    NSString *fromatterStr = [@"%@" stringByAppendingString:IntegerFormatter];
+    CGFloat numberAfterInput = [[NSString stringWithFormat:fromatterStr, self.textField.text, inputNumber] doubleValue];
     
     if (self.maxNumber <= numberAfterInput)
     {
-        self.textField.text = [NSString stringWithFormat:@"%ld", self.maxNumber];
+        self.textField.text = [NSString stringWithFormat:IntegerFormatter, self.maxNumber];
     }
     else if ([self.textField.text isEqualToString:@"0.00"])
     {
-        self.textField.text = [NSString stringWithFormat:@"%ld", inputNumber];
+        self.textField.text = [NSString stringWithFormat:IntegerFormatter, inputNumber];
     }
     else if (dotRange.location == NSNotFound || self.textField.text.length <= dotRange.location + 2)
     {
-        [self.textInputDelegate insertText:[NSString stringWithFormat:@"%ld", inputNumber]];
+        [self.textInputDelegate insertText:[NSString stringWithFormat:IntegerFormatter, inputNumber]];
         if (self.textField.text.length >= 2)
         {
             NSString *str = [self.textField.text substringToIndex:2];
             NSString *first = [self.textField.text substringToIndex:1];
             
-            if ((![str isEqualToString:@"0."]) && [first isEqualToString:@"0"])
+            if ((![str isEqualToString:ZeroDot]) && [first isEqualToString:Zero])
             {
-                _textField.text=[NSString stringWithFormat:@"%d",[_textField.text intValue]];
+                self.textField.text=[NSString stringWithFormat:IntegerFormatter,[self.textField.text integerValue]];
                 
             }
         }
@@ -79,14 +87,12 @@ static  NSString *const Dot = @".";
 
 - (IBAction)touchDeleteButton:(UIButton *)sender
 {
-    if ([@"0." isEqualToString:_textField.text]) {
-        _textField.text = @"";
-        
+    if ([self.textField.text isEqualToString:ZeroDot])
+    {
+        self.textField.text = @"";
         return;
-    } else {
-        
-        [self.textInputDelegate deleteBackward];
     }
+    [self.textInputDelegate deleteBackward];
 }
 
 - (IBAction)touchReturnButton:(UIButton *)sender
@@ -101,10 +107,10 @@ static  NSString *const Dot = @".";
 
 - (IBAction)touchDotButton:(UIButton *)sender
 {
-    NSRange dotRange = [_textField.text rangeOfString:Dot];
-    if (dotRange.location == NSNotFound && _textField.text.length == 0)
+    NSRange dotRange = [self.textField.text rangeOfString:Dot];
+    if (dotRange.location == NSNotFound && self.textField.text.length == 0)
     {
-        [self.textInputDelegate insertText:@"0."];
+        [self.textInputDelegate insertText:ZeroDot];
     }
     else if (dotRange.location == NSNotFound)
     {
