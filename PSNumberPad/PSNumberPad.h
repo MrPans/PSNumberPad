@@ -16,7 +16,7 @@
 + (PSNumberPad *)pad;
 
 // For Swift
-- (PSNumberPad *)pad;
+- (PSNumberPad *)numberPad;
 /**
  *  当前焦点的输入框，不设置此属性则无法将数字输入到firstResponse;
  */

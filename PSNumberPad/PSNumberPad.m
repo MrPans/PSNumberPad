@@ -47,7 +47,7 @@ static NSString *const ZeroDot = @"0.";
     return nil;
 }
 
-- (PSNumberPad *)pad;
+- (PSNumberPad *)numberPad;
 {
     return [[self class] pad];
 }
