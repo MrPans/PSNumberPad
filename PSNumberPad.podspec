@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PSNumberPad"
-  s.version      = "1.0.0"
+  s.version      = "1.1.0"
   s.summary      = "A number keyboard for input price."
   s.description  = <<-DESC
                    A number keyboard for input price.
