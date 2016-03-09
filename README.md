@@ -4,12 +4,12 @@ A number keyboard for input price.
 
 Apple have many keyboard but no one compeletly suitable the scene,which is price input.
 PSNumberPad fill this blank.
-### Upgrade v1.1.0
+### Upgrade v1.1.1
 Cause Swift can’t auto-Convert `+pad` to be a convenience initilazer,PSNumberPad provide another way to implement that.
 
-In Swift,use `-pad` to initialize your var like that
+In Swift,use `-numberPad` to initialize your var like that
 ```
-var numberPad = PSNumberPad().pad()
+var numberPad = PSNumberPad().numberPad()
 ```
 
 ### Preview 
@@ -66,12 +66,12 @@ For more，download and see the demo。
 
 苹果的键盘类型已经可以满足大多数开发需求了。但遇上O2O类App的开发 仍然有硬伤，那就是没有一个好用的，仅能输入数字和小数点的键盘。如果用其他键盘，会增加许多处理字符的工作量，最主要的是用户体验比较差。PSNumberPad弥补了这一空白。
 
-### 更新v1.1.0
-由于Swift未能自动将初始化方法`+pad`转换成便利初始化方法，且又无法直接当做类方法来调用。此次更新提供了另一个途径来实现PSNumberPad的初始化。
+### 更新v1.1.1
+由于Swift未能自动将初始化方法`+numberPad`转换成便利初始化方法，且又无法直接当做类方法来调用。此次更新提供了另一个途径来实现PSNumberPad的初始化。
 
 在Swift中，用以下代码来初始化PSNumberPad.
 ```
-var numberPad = PSNumberPad().pad()
+var numberPad = PSNumberPad().numberPad()
 ```
 
 ### 预览 
