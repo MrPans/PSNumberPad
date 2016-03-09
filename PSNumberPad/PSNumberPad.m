@@ -47,6 +47,11 @@ static NSString *const ZeroDot = @"0.";
     return nil;
 }
 
+- (PSNumberPad *)pad;
+{
+    return [[self class] pad];
+}
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
