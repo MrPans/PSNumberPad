@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "PSNumberPad"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "A number keyboard for input price."
   s.description  = <<-DESC
                    A number keyboard for input price.
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source       = { :git => "https://github.com/DeveloperPans/PSNumberPad.git", :tag => s.version.to_s }
   s.source_files = 'PSNumberPad/**/*.{h,m}'
-  s.resource = 'PSNumberPad/*.xib'
+  s.resource = 'PSNumberPad/**/*.{xib,png}'
   s.resource_bundle = { 'PSNumberPadIcons' => 'PSNumberPad/icons/*.png' }
 end
