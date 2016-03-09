@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
                    PSNumberPad fill this blank.
                    DESC
   s.homepage     = "https://github.com/DeveloperPans/PSNumberPad"
-  s.screenshots  = "https://raw.githubusercontent.com/DeveloperPans/PSImagePicker/master/PSNumberPad.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/DeveloperPans/PSNumberPad/master/PSNumberPad.gif"
   s.license      = "MIT"
   s.author             = { "Pan" => "developerpans@163.com" }
   s.social_media_url = 'http://shengpan.net'
