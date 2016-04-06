@@ -34,9 +34,14 @@ static NSString *const ZeroDot = @"0.";
 
 @implementation PSNumberPad
 
-+ (PSNumberPad *)pad
+- (instancetype)init
 {
-    NSArray *views = [[NSBundle mainBundle]loadNibNamed:[PSNumberPad description] owner:nil options:nil];
+    return [[self class] pad];
+}
+
++ (instancetype)pad
+{
+    NSArray *views = [[NSBundle mainBundle] loadNibNamed:[PSNumberPad description] owner:nil options:nil];
     for (UIView *view in views)
     {
         if ([view isKindOfClass:[PSNumberPad class]])
@@ -45,11 +50,6 @@ static NSString *const ZeroDot = @"0.";
         }
     }
     return nil;
-}
-
-- (PSNumberPad *)numberPad;
-{
-    return [[self class] pad];
 }
 
 - (void)awakeFromNib

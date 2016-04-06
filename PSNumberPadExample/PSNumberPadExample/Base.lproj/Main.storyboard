@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xdh-zW-e2C">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xdh-zW-e2C">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--PSNumberPad-->
@@ -25,12 +25,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKO-3w-bB7">
+                                <rect key="frame" x="261" y="550" width="78" height="30"/>
+                                <state key="normal" title="Using Swift"/>
+                                <connections>
+                                    <segue destination="PZm-Jw-ruh" kind="show" id="aiE-r7-k2d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CKO-3w-bB7" secondAttribute="bottom" constant="20" symbolic="YES" id="18b-mE-hBY"/>
                             <constraint firstItem="VGR-1c-WEA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="5pD-4b-Zx1"/>
                             <constraint firstItem="VGR-1c-WEA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="8Ov-0l-iXQ"/>
                             <constraint firstAttribute="trailing" secondItem="VGR-1c-WEA" secondAttribute="trailing" constant="8" id="BLS-69-Es8"/>
+                            <constraint firstItem="CKO-3w-bB7" firstAttribute="centerX" secondItem="VGR-1c-WEA" secondAttribute="centerX" id="Tyb-Ek-4hz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PSNumberPad" id="suD-QC-MgS"/>
@@ -40,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="392"/>
+            <point key="canvasLocation" x="1208" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="X01-ZG-Sn8">
@@ -59,6 +68,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wTL-Mg-agL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="355" y="392"/>
+        </scene>
+        <!--PSNumberPad-->
+        <scene sceneID="fZu-t6-TQr">
+            <objects>
+                <viewController id="PZm-Jw-ruh" customClass="SwiftViewController" customModule="PSNumberPadExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h2w-lP-t2Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ka-qW-M0w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vd4-LU-Ypt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入价格" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwN-cM-OdH">
+                                <rect key="frame" x="8" y="84" width="584" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="iMl-ID-Ue3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fwN-cM-OdH" firstAttribute="leading" secondItem="vd4-LU-Ypt" secondAttribute="leading" constant="8" id="1EJ-V6-QnQ"/>
+                            <constraint firstItem="fwN-cM-OdH" firstAttribute="top" secondItem="h2w-lP-t2Y" secondAttribute="bottom" constant="20" id="HAS-hJ-BJx"/>
+                            <constraint firstAttribute="trailing" secondItem="fwN-cM-OdH" secondAttribute="trailing" constant="8" id="rtW-0J-8mR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PSNumberPad" id="Tcl-Cp-zyZ"/>
+                    <connections>
+                        <outlet property="textField" destination="fwN-cM-OdH" id="Iaq-aO-4qX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNc-Er-GvL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208" y="1082"/>
         </scene>
     </scenes>
 </document>

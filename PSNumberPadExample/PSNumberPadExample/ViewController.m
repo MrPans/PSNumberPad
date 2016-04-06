@@ -29,7 +29,7 @@
 {
     if (!_numberPad)
     {
-        _numberPad = [PSNumberPad pad];
+        _numberPad = [[PSNumberPad alloc] init];
     }
     return _numberPad;
 }

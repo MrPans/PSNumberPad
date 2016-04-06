@@ -12,11 +12,9 @@
 
 @interface PSNumberPad : UIView
 
-//唯一指定初始化方法，不使用此方法初始化无法使键盘生效。
-+ (PSNumberPad *)pad;
-
-// For Swift
-- (PSNumberPad *)numberPad;
+// 唯一指定初始化方法，不使用此方法初始化无法使键盘生效。
+// 无论是调用何种初始化方法，最终都是回到这个初始化方法的。
+- (instancetype)init;
 /**
  *  当前焦点的输入框，不设置此属性则无法将数字输入到firstResponse;
  */
