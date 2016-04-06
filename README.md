@@ -4,15 +4,7 @@ A number keyboard for input price.
 
 Apple have many keyboard but no one compeletly suitable the scene,which is price input.
 PSNumberPad fill this blank.
-### Upgrade v1.1.2
-Fix bug — image disappear when number pad show up
-### Upgrade v1.1.1
-Cause Swift can’t auto-Convert `+pad` to be a convenience initilazer,PSNumberPad provide another way to implement that.
 
-In Swift,use `-numberPad` to initialize your var like that
-```
-var numberPad = PSNumberPad().numberPad()
-```
 
 ### Preview 
 ![image](https://raw.githubusercontent.com/DeveloperPans/PSNumberPad/master/PSNumberPad.gif)
@@ -41,7 +33,7 @@ Download zip and unarchiver.Drag 'PSNumberPad' folder into your project.
 {
     if (!_numberPad)
     {
-        _numberPad = [PSNumberPad pad];
+        _numberPad = [[PSNumberPad alloc] init];
     }
     return _numberPad;
 }
@@ -57,7 +49,7 @@ self.numberPad.textField = self.textField;
 ```
 
 ###Notice：
-1. The only way to init PSNumberPad is `+ (PSNumberPad *)pad`. Other initialzer is useless.
+1. The only way to init PSNumberPad is `- (instancetype)init`. Other initialzer is useless.
 
 For more，download and see the demo。
 
@@ -104,7 +96,7 @@ pod 'PSNumberPad'
 {
     if (!_numberPad)
     {
-        _numberPad = [PSNumberPad pad];
+        _numberPad = [[PSNumberPad alloc] init];
     }
     return _numberPad;
 }
@@ -121,6 +113,6 @@ self.numberPad.textField = self.textField;
 
 
 ### 注意：
-1. 只能使用`+ (PSNumberPad *)pad`方法初始化PSNumberPad.其他初始化方法是无效的。
+1. 只能使用`- (instancetype)init`方法初始化PSNumberPad.其他初始化方法是无效的。
 
 更多信息请查看源码。
