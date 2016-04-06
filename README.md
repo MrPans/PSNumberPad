@@ -51,6 +51,9 @@ self.numberPad.textField = self.textField;
 ###Notice：
 1. The only way to init PSNumberPad is `- (instancetype)init`. Other initialzer is useless.
 
+### Change Log
+[Change Log](https://github.com/DeveloperPans/PSNumberPad/blob/master/CHANGELOG.md)
+
 For more，download and see the demo。
 
 ==============================中文分割线==========================
@@ -114,5 +117,8 @@ self.numberPad.textField = self.textField;
 
 ### 注意：
 1. 只能使用`- (instancetype)init`方法初始化PSNumberPad.其他初始化方法是无效的。
+
+### 更新日志
+[更新日志](https://github.com/DeveloperPans/PSNumberPad/blob/master/CHANGELOG.md)
 
 更多信息请查看源码。

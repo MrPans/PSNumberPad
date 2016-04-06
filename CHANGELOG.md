@@ -24,7 +24,7 @@ var numberPad = PSNumberPad().numberPad()
 
 ------
 
-### Upgrade v1.2.0  
+### 更新v1.2.0  
 
 **删除**了两个工厂方法：`+pad` 和 `-numberPad`,添加了 `-init` 作为唯一初始化方法，来保证接口统一，并且兼容Swift.
 
@@ -32,7 +32,7 @@ oc中初始化方法: `[[PSNumberPad alloc] init] `
 Swift中初始化方法: `PSNumberPad()`
 
 
-### Upgrade v1.1.2
+### 更新v1.1.2
 
 修复BUG — 资源图片未能正确读取
 
