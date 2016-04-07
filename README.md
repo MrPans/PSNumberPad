@@ -62,15 +62,6 @@ For more，download and see the demo。
 一个仅能输入数字和小数点的键盘。常用于需要输入价格的场景。
 
 苹果的键盘类型已经可以满足大多数开发需求了。但遇上O2O类App的开发 仍然有硬伤，那就是没有一个好用的，仅能输入数字和小数点的键盘。如果用其他键盘，会增加许多处理字符的工作量，最主要的是用户体验比较差。PSNumberPad弥补了这一空白。
-### Upgrade v1.1.2
-修复BUG — 资源图片未能正确读取
-### 更新v1.1.1
-由于Swift未能自动将初始化方法`+numberPad`转换成便利初始化方法，且又无法直接当做类方法来调用。此次更新提供了另一个途径来实现PSNumberPad的初始化。
-
-在Swift中，用以下代码来初始化PSNumberPad.
-```
-var numberPad = PSNumberPad().numberPad()
-```
 
 ### 预览 
 ![image](https://raw.githubusercontent.com/DeveloperPans/PSNumberPad/master/PSNumberPad.gif)
