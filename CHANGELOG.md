@@ -16,9 +16,10 @@ Fix bug — image disappear when number pad show up
 Cause Swift can’t auto-Convert `+pad` to be a convenience initilazer,PSNumberPad provide another way to implement that.
 
 In Swift,use `-numberPad` to initialize your var like that
-\`\`\`
+
+```swift
 var numberPad = PSNumberPad().numberPad()
-\`\`\`
+```
 
 # PSNumberPad 更新日志
 
@@ -41,6 +42,7 @@ Swift中初始化方法: `PSNumberPad()`
 由于Swift未能自动将初始化方法`+numberPad`转换成便利初始化方法，且又无法直接当做类方法来调用。此次更新提供了另一个途径来实现PSNumberPad的初始化。
 
 在Swift中，用以下代码来初始化PSNumberPad.
-\`\`\`
+
+```swift
 var numberPad = PSNumberPad().numberPad()
-\`\`\`
+```
