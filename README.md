@@ -1,5 +1,9 @@
 # PSNumberPad (中文在后)
 
+[![Pod Version](https://img.shields.io/cocoapods/v/PSNumberPad.svg?style=flat)](http://cocoapods.org/pods/PSNumberPad)
+[![License](https://img.shields.io/cocoapods/l/PSNumberPad.svg?style=flat)](http://cocoapods.org/pods/PSNumberPad) 
+[![Platform](https://img.shields.io/cocoapods/p/PSNumberPad.svg?style=flat)](http://cocoapods.org/pods/PSNumberPad)
+
 A number keyboard for input price.
 
 Apple have many keyboard but no one compeletly suitable the scene,which is price input.
