@@ -12,7 +12,12 @@
 
 @interface PSNumberPad : UIView
 
-// 唯一指定初始化方法，不使用此方法初始化无法使键盘生效。
+NS_ASSUME_NONNULL_BEGIN
+/**
+ 唯一指定初始化方法，不使用此方法初始化无法使键盘生效。
+
+ @return 一个 PSNumberPad 的实例
+ */
 - (instancetype)init;
 
 /**
@@ -22,5 +27,7 @@
 
 @property (nonatomic, assign, getter=isDisableDot) BOOL disableDot;/**< 小数点是否启用*/
 @property (nonatomic, assign) NSInteger maxNumber;/**< 允许输入的最大数字，默认为10,000,000*/
+
+NS_ASSUME_NONNULL_END
 
 @end
