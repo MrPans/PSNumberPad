@@ -58,12 +58,6 @@ static NSString *const ZeroDot = @"0.";
     [self.dotButton setEnabled:!self.isDisableDot];
 }
 
-- (void)layoutSubviews
-{
-    self.autoresizingMask =  UIViewAutoresizingFlexibleHeight;
-    [super layoutSubviews];
-}
-
 - (IBAction)touchNumberButton:(UIButton *)sender
 {
     NSInteger inputNumber = [sender.titleLabel.text integerValue];
