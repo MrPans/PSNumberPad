@@ -23,6 +23,7 @@ static NSString *const ZeroDot = @"0.";
 
 @property (nonatomic, assign) id<UITextInput> textInputDelegate;
 @property (nonatomic, weak) IBOutlet UIButton *dotButton;
+@property (nonatomic, weak) IBOutlet UIButton *confirmButton;
 
 - (IBAction)touchDeleteButton:(UIButton *)sender;
 - (IBAction)touchReturnButton:(UIButton *)sender;
@@ -123,6 +124,23 @@ static NSString *const ZeroDot = @"0.";
     }
 }
 
+- (UIColor *)textColorForBackgroundColor:(UIColor *)backgroundColor
+{
+    CGFloat brightness = 0.0;
+    BOOL success = [backgroundColor getHue:nil
+                                saturation:nil
+                                brightness:&brightness
+                                     alpha:nil];
+    if (!success)
+    {
+        return [UIColor whiteColor];
+    }
+    
+    // 根据设计师的经验，亮度60%以下的底色白色字体可读性更好。反之黑色的可读性更高。
+    return brightness < 0.6 ? [UIColor whiteColor] : [UIColor blackColor];
+}
+
+
 #pragma mark - Getter && Setter
 
 - (NSInteger)maxNumber
@@ -141,5 +159,13 @@ static NSString *const ZeroDot = @"0.";
 {
     _disableDot = disableDot;
     [_dotButton setEnabled:!_disableDot];
+}
+
+- (void)setThemeColor:(UIColor *)themeColor
+{
+    _themeColor = themeColor;
+    self.confirmButton.backgroundColor = _themeColor;
+    [self.confirmButton setTitleColor:[self textColorForBackgroundColor:_themeColor]
+                             forState:UIControlStateNormal];
 }
 @end

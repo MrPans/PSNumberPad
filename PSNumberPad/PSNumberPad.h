@@ -25,7 +25,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong) UITextField *textField;
 
+/**
+ 键盘主题色。也许你需要将键盘右下角的确定按钮设为你App的主题色 ：）
+ */
+@property (nonatomic, strong) UIColor *themeColor;
+
 @property (nonatomic, assign, getter=isDisableDot) BOOL disableDot;/**< 小数点是否启用*/
+
 @property (nonatomic, assign) NSInteger maxNumber;/**< 允许输入的最大数字，默认为10,000,000*/
 
 NS_ASSUME_NONNULL_END

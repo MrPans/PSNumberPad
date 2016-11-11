@@ -23,6 +23,7 @@
 {
     [super viewDidLoad];
     self.numberPad.textField = self.textField;
+    self.numberPad.themeColor = [UIColor orangeColor];
 }
 
 - (PSNumberPad *)numberPad

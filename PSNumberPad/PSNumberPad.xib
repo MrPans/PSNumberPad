@@ -379,6 +379,7 @@
                 <constraint firstItem="CWW-R1-enV" firstAttribute="top" secondItem="p8Y-av-abk" secondAttribute="top" id="zuh-Es-6TP"/>
             </constraints>
             <connections>
+                <outlet property="confirmButton" destination="6Dd-mH-fqC" id="FR2-vo-krN"/>
                 <outlet property="dotButton" destination="GeW-SE-1dw" id="Ee6-Ja-1xW"/>
             </connections>
             <point key="canvasLocation" x="303" y="475"/>
