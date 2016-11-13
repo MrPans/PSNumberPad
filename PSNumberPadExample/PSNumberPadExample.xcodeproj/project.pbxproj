@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3A618B1DD80FC5001B73B3 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B3A618A1DD80FC5001B73B3 /* BG.png */; };
 		3B96375A1C3ED5DF00BFF1AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9637591C3ED5DF00BFF1AE /* main.m */; };
 		3B96375D1C3ED5DF00BFF1AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B96375C1C3ED5DF00BFF1AE /* AppDelegate.m */; };
 		3B9637601C3ED5DF00BFF1AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B96375F1C3ED5DF00BFF1AE /* ViewController.m */; };
 		3B9637631C3ED5DF00BFF1AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637611C3ED5DF00BFF1AE /* Main.storyboard */; };
 		3B9637651C3ED5DF00BFF1AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637641C3ED5DF00BFF1AE /* Assets.xcassets */; };
 		3B9637681C3ED5DF00BFF1AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637661C3ED5DF00BFF1AE /* LaunchScreen.storyboard */; };
-		3B96378D1C3ED61800BFF1AE /* PSNdelete.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637841C3ED61800BFF1AE /* PSNdelete.png */; };
 		3B96378E1C3ED61800BFF1AE /* PSNdelete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637851C3ED61800BFF1AE /* PSNdelete@2x.png */; };
-		3B96378F1C3ED61800BFF1AE /* PSNdelete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637861C3ED61800BFF1AE /* PSNdelete@3x.png */; };
-		3B9637901C3ED61800BFF1AE /* PSNHiddenPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637871C3ED61800BFF1AE /* PSNHiddenPad.png */; };
 		3B9637911C3ED61800BFF1AE /* PSNHiddenPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637881C3ED61800BFF1AE /* PSNHiddenPad@2x.png */; };
-		3B9637921C3ED61800BFF1AE /* PSNHiddenPad@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9637891C3ED61800BFF1AE /* PSNHiddenPad@3x.png */; };
 		3B9637931C3ED61800BFF1AE /* PSNumberPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B96378B1C3ED61800BFF1AE /* PSNumberPad.m */; };
 		3B9637941C3ED61800BFF1AE /* PSNumberPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B96378C1C3ED61800BFF1AE /* PSNumberPad.xib */; };
 		3BE7B2701CB4B05F00D75D6F /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE7B26F1CB4B05F00D75D6F /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3A618A1DD80FC5001B73B3 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
 		3B9637551C3ED5DF00BFF1AE /* PSNumberPadExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSNumberPadExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9637591C3ED5DF00BFF1AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B96375B1C3ED5DF00BFF1AE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,12 +33,8 @@
 		3B9637641C3ED5DF00BFF1AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B9637671C3ED5DF00BFF1AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B9637691C3ED5DF00BFF1AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B9637841C3ED61800BFF1AE /* PSNdelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PSNdelete.png; sourceTree = "<group>"; };
 		3B9637851C3ED61800BFF1AE /* PSNdelete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PSNdelete@2x.png"; sourceTree = "<group>"; };
-		3B9637861C3ED61800BFF1AE /* PSNdelete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PSNdelete@3x.png"; sourceTree = "<group>"; };
-		3B9637871C3ED61800BFF1AE /* PSNHiddenPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PSNHiddenPad.png; sourceTree = "<group>"; };
 		3B9637881C3ED61800BFF1AE /* PSNHiddenPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PSNHiddenPad@2x.png"; sourceTree = "<group>"; };
-		3B9637891C3ED61800BFF1AE /* PSNHiddenPad@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PSNHiddenPad@3x.png"; sourceTree = "<group>"; };
 		3B96378A1C3ED61800BFF1AE /* PSNumberPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSNumberPad.h; sourceTree = "<group>"; };
 		3B96378B1C3ED61800BFF1AE /* PSNumberPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSNumberPad.m; sourceTree = "<group>"; };
 		3B96378C1C3ED61800BFF1AE /* PSNumberPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PSNumberPad.xib; sourceTree = "<group>"; };
@@ -117,12 +111,9 @@
 		3B9637831C3ED61800BFF1AE /* icons */ = {
 			isa = PBXGroup;
 			children = (
-				3B9637841C3ED61800BFF1AE /* PSNdelete.png */,
+				3B3A618A1DD80FC5001B73B3 /* BG.png */,
 				3B9637851C3ED61800BFF1AE /* PSNdelete@2x.png */,
-				3B9637861C3ED61800BFF1AE /* PSNdelete@3x.png */,
-				3B9637871C3ED61800BFF1AE /* PSNHiddenPad.png */,
 				3B9637881C3ED61800BFF1AE /* PSNHiddenPad@2x.png */,
-				3B9637891C3ED61800BFF1AE /* PSNHiddenPad@3x.png */,
 			);
 			path = icons;
 			sourceTree = "<group>";
@@ -187,13 +178,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B96378D1C3ED61800BFF1AE /* PSNdelete.png in Resources */,
-				3B9637921C3ED61800BFF1AE /* PSNHiddenPad@3x.png in Resources */,
 				3B9637681C3ED5DF00BFF1AE /* LaunchScreen.storyboard in Resources */,
 				3B9637911C3ED61800BFF1AE /* PSNHiddenPad@2x.png in Resources */,
-				3B96378F1C3ED61800BFF1AE /* PSNdelete@3x.png in Resources */,
+				3B3A618B1DD80FC5001B73B3 /* BG.png in Resources */,
 				3B9637651C3ED5DF00BFF1AE /* Assets.xcassets in Resources */,
-				3B9637901C3ED61800BFF1AE /* PSNHiddenPad.png in Resources */,
 				3B9637941C3ED61800BFF1AE /* PSNumberPad.xib in Resources */,
 				3B96378E1C3ED61800BFF1AE /* PSNdelete@2x.png in Resources */,
 				3B9637631C3ED5DF00BFF1AE /* Main.storyboard in Resources */,

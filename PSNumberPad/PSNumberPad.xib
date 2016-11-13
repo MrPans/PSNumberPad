@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z89-dg-TBR">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z89-dg-TBR">
                     <rect key="frame" x="0.0" y="0.0" width="80" height="142"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="1">
@@ -27,7 +27,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="HZ8-AM-zN7"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVH-dB-WJS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVH-dB-WJS">
                     <rect key="frame" x="80" y="0.0" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="fGE-c3-Jkf"/>
@@ -46,7 +46,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="7pN-lf-f3O"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-N3-dPV">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFY-N3-dPV">
                     <rect key="frame" x="160" y="0.0" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="mTc-cm-7zR"/>
@@ -83,7 +83,7 @@
                         <action selector="touchDeleteButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="uNe-Ra-shz"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quW-cq-Hni">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quW-cq-Hni">
                     <rect key="frame" x="0.0" y="142" width="80" height="142"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="4">
@@ -94,7 +94,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ith-Hn-zvs"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzw-Fb-wrS">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzw-Fb-wrS">
                     <rect key="frame" x="80" y="142" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="xVQ-OT-fzA"/>
@@ -113,7 +113,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="pHj-e5-zRt"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-FZ-mOP">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-FZ-mOP">
                     <rect key="frame" x="160" y="142" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="CTt-eH-XeD"/>
@@ -132,7 +132,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="7YM-bX-IpJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-av-abk">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8Y-av-abk">
                     <rect key="frame" x="0.0" y="284" width="80" height="142"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="7">
@@ -143,7 +143,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="mAl-Lp-lJf"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gv-uK-ibV">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gv-uK-ibV">
                     <rect key="frame" x="80" y="284" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="dvT-xS-apw"/>
@@ -162,7 +162,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="9DB-gT-io9"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-R1-enV">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-R1-enV">
                     <rect key="frame" x="160" y="284" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="5HR-O4-JY1"/>
@@ -181,7 +181,7 @@
                         <action selector="touchNumberButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="lEL-ba-xKv"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-mH-fqC">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dd-mH-fqC">
                     <rect key="frame" x="240" y="284" width="80" height="284"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -201,18 +201,15 @@
                         <action selector="touchReturnButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="WUX-lk-nNm"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeW-SE-1dw">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeW-SE-1dw">
                     <rect key="frame" x="0.0" y="426" width="80" height="142"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title=".">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
-                    <connections>
-                        <action selector="touchDotButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="EIh-da-OPF"/>
-                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz1-81-dbx">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xz1-81-dbx">
                     <rect key="frame" x="80" y="426" width="80" height="142"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="LCT-Zj-8AL"/>
@@ -270,21 +267,21 @@
                         <constraint firstAttribute="height" constant="0.5" id="y6I-cT-IKh"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="185-2N-aqd">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="185-2N-aqd" userLabel="45分割线">
                     <rect key="frame" x="80" y="0.0" width="1" height="568"/>
                     <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="0.5" id="VA1-WI-hlM"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tX-akx">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdV-tX-akx" userLabel="56分割线">
                     <rect key="frame" x="160" y="0.0" width="1" height="568"/>
                     <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="0.5" id="abn-UT-EnJ"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClU-ky-hqv">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ClU-ky-hqv" userLabel="6确定分割线">
                     <rect key="frame" x="239" y="0.0" width="1" height="568"/>
                     <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -380,7 +377,8 @@
             </constraints>
             <connections>
                 <outlet property="confirmButton" destination="6Dd-mH-fqC" id="FR2-vo-krN"/>
-                <outlet property="dotButton" destination="GeW-SE-1dw" id="Ee6-Ja-1xW"/>
+                <outlet property="deleteButton" destination="fmG-fM-gU5" id="dvm-vw-NBr"/>
+                <outlet property="dotButton" destination="GeW-SE-1dw" id="3UM-e2-MtA"/>
             </connections>
             <point key="canvasLocation" x="303" y="475"/>
         </view>

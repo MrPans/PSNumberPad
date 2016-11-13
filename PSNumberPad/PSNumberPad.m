@@ -14,6 +14,8 @@
 #define IntegerFormatter @"%d"
 #endif
 
+#define HIGHLIGHT_COLOR [UIColor colorWithRed:170.0/255.0 green:170.0/255.0 blue:170.0/255.0 alpha:0]
+
 static const NSInteger MaxNumber = 10000000;
 static NSString *const Dot = @".";
 static NSString *const Zero = @"0";
@@ -23,6 +25,7 @@ static NSString *const ZeroDot = @"0.";
 
 @property (nonatomic, assign) id<UITextInput> textInputDelegate;
 @property (nonatomic, weak) IBOutlet UIButton *dotButton;
+@property (nonatomic, weak) IBOutlet UIButton *deleteButton;
 @property (nonatomic, weak) IBOutlet UIButton *confirmButton;
 
 - (IBAction)touchDeleteButton:(UIButton *)sender;
@@ -32,6 +35,11 @@ static NSString *const ZeroDot = @"0.";
 
 @end
 
+@interface PSNumberPad (Appearance)
+
+- (void)setupAppearance;
+
+@end
 
 @implementation PSNumberPad
 
@@ -47,7 +55,9 @@ static NSString *const ZeroDot = @"0.";
     {
         if ([view isKindOfClass:[PSNumberPad class]])
         {
-            return (PSNumberPad *)view;
+            PSNumberPad *pad = (PSNumberPad *)view;
+            [pad setupAppearance];
+            return pad;
         }
     }
     return nil;
@@ -124,23 +134,6 @@ static NSString *const ZeroDot = @"0.";
     }
 }
 
-- (UIColor *)textColorForBackgroundColor:(UIColor *)backgroundColor
-{
-    CGFloat brightness = 0.0;
-    BOOL success = [backgroundColor getHue:nil
-                                saturation:nil
-                                brightness:&brightness
-                                     alpha:nil];
-    if (!success)
-    {
-        return [UIColor whiteColor];
-    }
-    
-    // 根据设计师的经验，亮度60%以下的底色白色字体可读性更好。反之黑色的可读性更高。
-    return brightness < 0.6 ? [UIColor whiteColor] : [UIColor blackColor];
-}
-
-
 #pragma mark - Getter && Setter
 
 - (NSInteger)maxNumber
@@ -165,7 +158,23 @@ static NSString *const ZeroDot = @"0.";
 {
     _themeColor = themeColor;
     self.confirmButton.backgroundColor = _themeColor;
-    [self.confirmButton setTitleColor:[self textColorForBackgroundColor:_themeColor]
-                             forState:UIControlStateNormal];
 }
+
+@end
+
+
+@implementation PSNumberPad (Appearance)
+
+- (void)setupAppearance
+{
+    UIImage *backgroundImage = [UIImage imageNamed:@"BG"];
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[UIButton class]])
+        {
+            UIButton *btn = (UIButton *)obj;
+            [btn setBackgroundImage:backgroundImage forState:UIControlStateHighlighted];
+        }
+    }];
+}
+
 @end
