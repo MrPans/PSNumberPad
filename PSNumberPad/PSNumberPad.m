@@ -35,12 +35,6 @@ static NSString *const ZeroDot = @"0.";
 
 @end
 
-@interface PSNumberPad (Appearance)
-
-- (void)setupAppearance;
-
-@end
-
 @implementation PSNumberPad
 
 - (instancetype)init
@@ -134,6 +128,18 @@ static NSString *const ZeroDot = @"0.";
     }
 }
 
+- (void)setupAppearance
+{
+    UIImage *backgroundImage = [UIImage imageNamed:@"BG"];
+    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isKindOfClass:[UIButton class]])
+        {
+            UIButton *btn = (UIButton *)obj;
+            [btn setBackgroundImage:backgroundImage forState:UIControlStateHighlighted];
+        }
+    }];
+}
+
 #pragma mark - Getter && Setter
 
 - (NSInteger)maxNumber
@@ -160,21 +166,5 @@ static NSString *const ZeroDot = @"0.";
     self.confirmButton.backgroundColor = _themeColor;
 }
 
-@end
-
-
-@implementation PSNumberPad (Appearance)
-
-- (void)setupAppearance
-{
-    UIImage *backgroundImage = [UIImage imageNamed:@"BG"];
-    [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj isKindOfClass:[UIButton class]])
-        {
-            UIButton *btn = (UIButton *)obj;
-            [btn setBackgroundImage:backgroundImage forState:UIControlStateHighlighted];
-        }
-    }];
-}
 
 @end
