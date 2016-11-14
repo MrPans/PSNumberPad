@@ -4,11 +4,10 @@
 [![License](https://img.shields.io/cocoapods/l/PSNumberPad.svg?style=flat)](http://cocoapods.org/pods/PSNumberPad) 
 [![Platform](https://img.shields.io/cocoapods/p/PSNumberPad.svg?style=flat)](http://cocoapods.org/pods/PSNumberPad)
 
-A number keyboard for input price.
+A number keyboard for price inputing.
 
-Apple have many keyboard but no one compeletly suitable the scene,which is price input.
-PSNumberPad fill this blank.
-
+Apple have many keyboard but no one suitable price inputing completely.
+PSNumberPad fill the blank.
 
 ### Preview 
 ![image](https://raw.githubusercontent.com/DeveloperPans/PSNumberPad/master/PSNumberPad.gif)
@@ -117,3 +116,4 @@ self.numberPad.textField = self.textField;
 [更新日志](https://github.com/DeveloperPans/PSNumberPad/blob/master/CHANGELOG.md)
 
 更多信息请查看源码。
+
