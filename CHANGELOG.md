@@ -4,8 +4,14 @@
 ### Upgrade v1.3.0  
 
 **Feature**
-* 
 
+* Highlight Background when key taped.
+* new delegate method `-numberpadShouldReturn:`
+* theme color settable
+
+**Change**
+
+* Change default max number to 9,999,999
 
 ### Upgrade v1.2.0  
 
@@ -30,6 +36,19 @@ var numberPad = PSNumberPad().numberPad()
 # PSNumberPad 更新日志
 
 ------
+
+### 更新 v1.3.0  
+
+**功能**
+
+* 点击键盘上的按键时有高亮背景了。
+* 添加了新的代理方法 `-numberpadShouldReturn:`
+* 可以配置主题色了
+
+**变更**
+
+* 修改默认最大值数字为 9,999,999
+
 
 ### 更新v1.2.0  
 
