@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "PSNumberPad.h"
 
-@interface ViewController ()
+@interface ViewController () <PSNumberPadDelegate>
 
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 @property (nonatomic, strong) PSNumberPad *numberPad;
@@ -24,6 +24,7 @@
     [super viewDidLoad];
     self.numberPad.textField = self.textField;
     self.numberPad.themeColor = [UIColor orangeColor];
+    self.numberPad.delegate = self;
 }
 
 - (PSNumberPad *)numberPad

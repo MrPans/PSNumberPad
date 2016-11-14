@@ -1,6 +1,12 @@
 # PSNumberPad Change Log
 -----
 
+### Upgrade v1.3.0  
+
+**Feature**
+* 
+
+
 ### Upgrade v1.2.0  
 
 **delete** factory method `+pad` and `-numberPad`,and add `-init` method for Swift compatible, also for API unitive.
@@ -46,3 +52,5 @@ Swift中初始化方法: `PSNumberPad()`
 ```swift
 var numberPad = PSNumberPad().numberPad()
 ```
+
+

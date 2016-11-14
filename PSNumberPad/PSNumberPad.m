@@ -107,6 +107,18 @@ static NSString *const ZeroDot = @"0.";
 
 - (IBAction)touchReturnButton:(UIButton *)sender
 {
+    if (![self.delegate respondsToSelector:@selector(numberPadShouldReturn:)])
+    {
+        [self.textField resignFirstResponder];
+        return;
+    }
+    
+    BOOL shouldReturn = [self.delegate numberPadShouldReturn:self];
+    if (!shouldReturn)
+    {
+        return;
+    }
+    
     [self.textField resignFirstResponder];
 }
 

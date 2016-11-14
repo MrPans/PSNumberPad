@@ -9,10 +9,23 @@
 #import <UIKit/UIKit.h>
 
 @class PSNumberPad;
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol PSNumberPadDelegate <NSObject>
+
+/**
+ Called when `Return` button taped.
+
+ @param pad a pad which had been touched.
+ @return YES or NO
+ */
+- (BOOL)numberPadShouldReturn:(PSNumberPad *)pad;
+
+@end
+
 
 @interface PSNumberPad : UIView
 
-NS_ASSUME_NONNULL_BEGIN
 /**
  唯一指定初始化方法，不使用此方法初始化无法使键盘生效。
 
@@ -29,6 +42,8 @@ NS_ASSUME_NONNULL_BEGIN
  键盘主题色。也许你需要将键盘右下角的确定按钮设为你App的主题色 ：）
  */
 @property (nonatomic, strong) UIColor *themeColor;
+
+@property (nonatomic, weak) id<PSNumberPadDelegate> delegate;
 
 @property (nonatomic, assign, getter=isDisableDot) BOOL disableDot;/**< 小数点是否启用*/
 
