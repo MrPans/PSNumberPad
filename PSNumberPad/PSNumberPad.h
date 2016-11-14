@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign, getter=isDisableDot) BOOL disableDot;/**< 小数点是否启用*/
 
-@property (nonatomic, assign) NSInteger maxNumber;/**< 允许输入的最大数字，默认为10,000,000*/
+@property (nonatomic, assign) NSInteger maxNumber;/**< 允许输入的最大数字，默认为9,999,999*/
 
 NS_ASSUME_NONNULL_END
 

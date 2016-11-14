@@ -16,7 +16,7 @@
 
 #define HIGHLIGHT_COLOR [UIColor colorWithRed:170.0/255.0 green:170.0/255.0 blue:170.0/255.0 alpha:0]
 
-static const NSInteger MaxNumber = 10000000;
+static const NSInteger DefaultMaximalValue = 9999999;
 static NSString *const Dot = @".";
 static NSString *const Zero = @"0";
 static NSString *const ZeroDot = @"0.";
@@ -144,7 +144,7 @@ static NSString *const ZeroDot = @"0.";
 
 - (NSInteger)maxNumber
 {
-    return _maxNumber ? _maxNumber : MaxNumber;
+    return _maxNumber ? _maxNumber : DefaultMaximalValue;
 }
 
 - (void)setTextField:(UITextField *)textField
