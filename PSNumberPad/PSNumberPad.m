@@ -72,7 +72,14 @@ static NSString *const ZeroDot = @"0.";
     
     if (self.maxNumber <= numberAfterInput)
     {
-        self.textField.text = [NSString stringWithFormat:IntegerFormatter, self.maxNumber];
+        if ([self.delegate respondsToSelector:@selector(numberPadDidOverMaxNumber:)])
+        {
+            [self.delegate numberPadDidOverMaxNumber:self];
+        }
+        else
+        {
+            self.textField.text = [NSString stringWithFormat:IntegerFormatter, self.maxNumber];
+        }
     }
     else if ([self.textField.text isEqualToString:@"0.00"])
     {

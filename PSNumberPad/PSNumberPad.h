@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol PSNumberPadDelegate <NSObject>
 
+@optional
 /**
  Called when `Return` button taped.
 
@@ -20,6 +21,13 @@ NS_ASSUME_NONNULL_BEGIN
  @return YES or NO
  */
 - (BOOL)numberPadShouldReturn:(PSNumberPad *)pad;
+
+/**
+ Called when user's typed number has reach maximum number
+ 
+ @param pad a pad.
+ */
+- (void)numberPadDidOverMaxNumber:(PSNumberPad *)pad;
 
 @end
 
