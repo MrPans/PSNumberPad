@@ -32,6 +32,7 @@ static NSString *const ZeroDot = @"0.";
 - (IBAction)touchReturnButton:(UIButton *)sender;
 - (IBAction)touchHiddenButton:(UIButton *)sender;
 - (IBAction)touchNumberButton:(UIButton *)sender;
+- (IBAction)touchDotButton:(UIButton *)sender;
 
 @end
 
